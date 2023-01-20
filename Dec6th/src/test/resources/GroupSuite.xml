@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<groups>
+		<run>
+			<include name="smoke" />
+		</run>
+	</groups>
+	<test name="Testing">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.psr.groupTest.NewTest" />
+		</classes>
+	</test>
+	<test name="Testing1">
+		<groups>
+			<run>
+				<include name="functional" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.psr.groupTest.NewTest1" />
+		</classes>
+	</test>
+</suite>
